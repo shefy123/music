@@ -25,9 +25,6 @@
     /* animation: shotup 600ms ease-in-out;
   animation-delay: 300ms; */
 }
-.four {
-    height: 100%;
-    width: 300px;
-    background-color: brown;
+.container {
+    color:white;
 }
-
