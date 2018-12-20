@@ -37,9 +37,9 @@ h1 {
     margin: 16px;
     border: none;
     font-family: 'Roboto', sans-serif;
-    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
+    /* -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
 -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
+box-shadow: 0px 0px 3px 1px rgba(0,0,0,1); */
 }
 .card-img-overlay {
     padding: 6.25em
@@ -48,11 +48,114 @@ box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
     font-size:20px;
     font-weight: bold;
 }
-.card-img-overlay:hover {
+.container .card-img-overlay:hover {
     background-color: rgba(24, 203, 219, 0.5);
     color: black;
     cursor: pointer;
     text-align: bottom;
     
 }
+/* follow us */
+.follow-us .card {
+    text-align: center;
+    background:#f9f96f;
+    border-radius: unset;
+    padding: 26px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
 
+.follow-us i {
+    font-size: 30px;
+    padding: 8px;
+    margin: 16px;
+    background-color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: #c86ea6;
+}
+.follow-us  a {
+    color: #c86ea6; 
+}
+.follow-us .card-text {
+    font-size: 20px;
+    padding: 20px;
+    margin: 16px;
+    color: gray;
+}
+
+/* follow button */
+
+.buttons {
+
+    text-align: center;
+}
+
+.btn-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #c86ea6, #919274, #9e9f73,  #c86ea6);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+
+}
+
+/* audio */
+.audio  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap !important;
+}
+.audio .card {
+    width: 40%;
+    text-align: center;
+}
+.audio .card-img {
+    align-items: center;
+}
+.audio .card-img{
+
+  height:450px ;
+}
+.card-img {
+    -webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: blur(3px);
+}
+.audio .circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: 2px solid #b8b2b2;
+    
+}
