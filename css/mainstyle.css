@@ -1,26 +1,124 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: white !important;
+}
+/* navbar */
+
+
+.fa.menu {
+    color: gainsboro;
+    font-size: 2em;
+    padding-top: 0.4em;
+    padding-left: 0.4em;
+    cursor: pointer;
+  }
+  .menu:hover {
+    color: darkturquoise;
+  }
+  nav.blue {
+
+    padding-top: 0;
+    background-color: transparent;
+    padding-left: 0px;
+  }
+  .navbar-inverse {
+    border-color:transparent !important;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #c7e6e3;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 5em;
+    
+  }
+  
+  .sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-left: 16px;
+  }
+  
+  .sidenav a:hover {
+    text-decoration: none;
+    color: darkturquoise;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3em;
+    margin-left: 1em;
+  }
+  
+  #head {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    line-height: 0.4em;
+  }
+  #head:hover {
+    color: darkturquoise;
+  }
+  .search {
+    margin-left: 0.9em;
+  }
+  .fa.rt {
+    color: black;
+    font-size: 2em;
+  }
+  .fa.rt:hover {
+    color: darkturquoise;
+  }
+  .navbar-center {
+    position: absolute;
+    left: 35%;
+    top: 0;
+  }
+  .navbar-right {
+    padding-right: 1.5em;
+  }
+  .car {
+    padding-top: 3em;
+  }
+  
+/* first page */
+.first-page {
+    position: relative;
+    height: 630px !important;
+    width: 100%;
+    top: -70px;
+    z-index: -9;
+}
+.first-page .card {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Playball', cursive;
+ 
+}
+.first-page .card-img {
+    height: 100%;
+}
+.first-page .card-text  {
+    font-size: 60px !important;
+}
+.first-page .card-img-overlay {
+ padding: 10.25em !important;
+}
 .small {
     font-size: 26px;
     color: aliceblue;
 
 }
-/* .circle {
-    clip: rect(0 230px 50px 0);
-    width: 260px;
-    height: 275px;
-    border-radius: 50%;
-    border: 3px solid white;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    transition-delay: 1.3s;
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-    animation: shotup 600ms ease-in-out;
-    animation-delay: 300ms;
-} */
 h1 {
     text-align: center;
     margin-top: 26px;
@@ -128,34 +226,5 @@ box-shadow: 0px 0px 3px 1px rgba(0,0,0,1); */
 
 }
 
-/* audio */
-.audio  {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap !important;
-}
-.audio .card {
-    width: 40%;
-    text-align: center;
-}
-.audio .card-img {
-    align-items: center;
-}
-.audio .card-img{
 
-  height:450px ;
-}
-.card-img {
-    -webkit-filter: blur(3px);
--moz-filter: blur(3px);
--o-filter: blur(3px);
--ms-filter: blur(3px);
-filter: blur(3px);
-}
-.audio .circle {
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
-    border: 2px solid #b8b2b2;
-    
-}
+

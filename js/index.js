@@ -1,14 +1,13 @@
-var icon = document.getElementById("icon");
-var icon1 = document.getElementById("a");
-var icon2 = document.getElementById("b");
-var icon3 = document.getElementById("c");
-var nav = document.getElementById('nav');
-var blue = document.getElementById("blue");
+// navbar
 
-icon.addEventListener('click', function() {
-  icon1.classList.toggle('a');
-  icon2.classList.toggle('c');
-  icon3.classList.toggle('b');
-  nav.classList.toggle('show');
-  blue.classList.toggle('slide');
+function openNav() {
+  document.getElementById("sidebar").style.width = "17em";
+  document.body.style.backgroundColor = "#7D7D7D";
+}
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+  document.body.style.backgroundColor = "white";
+}
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
 });

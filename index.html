@@ -17,49 +17,49 @@
   <!-- fontowesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <!-- style sheet -->
+ 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/audio.css">
 
 
 </head>
 
 <body>
 
+  <!--header nav-->
   <header>
-
-    <div class="hamburger-icon" id="icon">
-      <div class="icon-1" id="a"></div>
-      <div class="icon-2" id="b"></div>
-      <div class="icon-3" id="c"></div>
-      <div class="clear"></div>
-    </div>
-
-    <nav id="nav">
-
-      <ul>
-        <li>Home</li>
-        <li>Blog</li>
-        <li>Music</li>
-        <li>Events</li>
-        <li>Other pages</li>
-        <li>Contact</li>
-      </ul>
-
+    <nav class="navbar navbar-inverse blue navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+      
+          <!--side navbar-->
+          <div class="sidenav" id="sidebar">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+       
+            <!--others-->
+            <a href="#"><i class="fa fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-cogs"></i> Services</a>
+            <a href="#"><i class="fa fa-phone"></i> Contact</a>
+          </div>
+          <span onclick="openNav()" class="icon menu fa fa-bars"></span>
+     
+        </div>
+      </div>
     </nav>
-
-    <div class="dark-blue" id="blue"></div>
-
-    <!-- line band -->
-    <div class="circle">
-
-    </div>
-    <!-- content -->
-    <section class="content">
-      <h1 class="animated zoomIn">Music World</h1>
-      <p class="small animated slideInUp">Exclusive Live Set</p>
-    </section>
   </header>
 
+  <!-- first page -->
+<div class="first-page">
+  <div class="card bg-dark text-white">
+    <img class="card-img" src="images/img1.jpg" alt="Card image">
+    <div class="card-img-overlay">
+      <h5 class="card-title animated zoomIn">Music World</h5>
+      <p class="card-text animated slideInUp">Music is all we need</p>
+     
+    </div>
+  </div>
+</div>
 
   <!-- news -->
   <h1>News</h1>
@@ -115,32 +115,40 @@
         </div>
       </div>
  </div>
-
- <!-- video -->
-<div class="audio">
-    <div class="card ">
-        <img class="card-img" src="images/dance.jpg" alt="Card image">
-        <div class="card-img-overlay">
-           <div class="circle">
-
-           </div>
-          
-        </div>
-      </div>
-      <div class="card ">
-          <img class="card-img" src="images/dance1.jpg" alt="Card image">
-          <div class="card-img-overlay">
-             <div class="circle">
+<!-- audio player -->
+<h1>Audio Music</h1>
+<div class="audio animated bounceInLeft">
   
-             </div>
-            
-          </div>
-        </div>
+<div class="music-player-container is-playing">
+
+  <div class="music-player">
+    <div class="player-content-container">
+      <h1 class="artist-name">Incubus</h1><!--  /.track-title -->
+      <h2 class="album-title">Make Yourself</h2><!--  /.album-title -->
+      <h3 class="song-title">"Stellar"</h3><!--  /.song-title -->
+      <div class="music-player-controls">
+        <div class="control-back"></div><!--  /.control-back -->
+        <div class="control-play"></div><!--  /.control-play -->
+        <div class="control-forwards"></div><!--  /.control-forwards -->
+      </div><!--  /.music-player-controls -->
+    </div><!--  /.player-content-container -->
+  </div><!--  /.music-player -->
+
+  <div class="album">
+    <div class="album-art"></div><!--  /.album-art -->
+    <div class="vinyl"></div><!--  /.vinyl -->
+  </div><!--  /.album-art -->
+
+</div><!--  /.music-player -->
 </div>
 
- 
 
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/audio.js"></script>
   <script src="js/index.js"></script>
+  
+  <!-- dsdhasdh -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
