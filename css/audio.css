@@ -1,6 +1,10 @@
 *, *:before, *:after {
     box-sizing: border-box;
   }
+  h1 {
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+  }
   .audio  {
       position: absolute;
       top: 2260px;
