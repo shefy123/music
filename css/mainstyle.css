@@ -30,7 +30,7 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    background-color: #c7e6e3;
+    background-color: #dea6da;
     overflow: hidden;
     transition: 0.5s;
     padding-top: 5em;
@@ -41,7 +41,7 @@ body {
     padding: 10px;
     text-decoration: none;
     font-size: 1.5em;
-    color: black;
+    color: white;
     display: block;
     transition: 0.3s;
     margin-left: 16px;
@@ -49,8 +49,8 @@ body {
   
   .sidenav a:hover {
     text-decoration: none;
-    color: darkturquoise;
-  }
+    color: #f9f96f;
+}
   
   .sidenav .closebtn {
     position: absolute;
@@ -121,8 +121,7 @@ body {
 }
 h1 {
     text-align: center;
-    margin-top: 26px;
-    padding-top: 16px;
+    margin: 0px;
     font-family: 'Playball', cursive;
     font-size: 40px;
 }
@@ -132,12 +131,14 @@ h1 {
     justify-content: space-evenly;
     padding-top: 16px;
     padding-bottom: 16px;
+
 }
 
 .container .card {
     margin: 16px;
     border: none;
     font-family: 'Roboto', sans-serif;
+   
     width: 30rem;
     /* -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
 -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
@@ -146,25 +147,25 @@ box-shadow: 0px 0px 3px 1px rgba(0,0,0,1); */
 .container .card-img-overlay {
     padding: 6.25em
 }
-.container .card-img-overlay .card-title {
-    font-size:20px;
-    font-weight: bold;
-}
+
 .container .card-img-overlay:hover {
     background-color: rgba(24, 203, 219, 0.5);
     color: black;
     cursor: pointer;
     text-align: bottom;
-    
+    transition-duration: 1s;
 }
 /* follow us */
+.follow-us {
+    height: 740px;
+}
 .follow-us .card {
     text-align: center;
     background:#f9f96f;
     border-radius: unset;
     padding: 26px;
-    margin-left: 16px;
-    margin-right: 16px;
+    /* margin-left: 16px;
+    margin-right: 16px; */
 }
 
 .follow-us i {
@@ -230,13 +231,5 @@ box-shadow: 0px 0px 3px 1px rgba(0,0,0,1); */
 
 }
 
+/* preloader */
 
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-    .container .card {
-        width: 46em !important;
-    }
-  }
