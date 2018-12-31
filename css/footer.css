@@ -1,0 +1,225 @@
+.footer-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-nav {
+    padding-left: 0px;
+}
+.footer-nav li {
+    list-style: none;
+    padding-top: 16px;
+}
+.footer-nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    /* color: linear-gradient(to right, #c86ea6, #919274, #9e9f73,  #c86ea6); */
+    color: blueviolet;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; 
+  
+}
+.footer {
+    justify-content: center;
+}
+
+.footer-widget-area {
+    text-align: left;
+}
+.widget-title h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* footer button */
+
+.footer-widget-area button{
+    margin-top: 0px !important;
+    text-align: center;
+}
+
+.footer-widget-area button {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.footer-widget-area button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.footer-widget-area button:focus {
+    outline: none;
+}
+
+.footer-widget-area button {
+    background-image: linear-gradient(to right, #c86ea6, #919274, #9e9f73,  #c86ea6);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+
+}
+/* input */
+
+.contact .form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid #dea6da;
+    box-shadow: none;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+input:focus {
+    outline: none;
+}
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: gray;
+}
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bar:before,
+.bar:after {
+    content: '';
+    height: 4px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: gray;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+.highlight {
+    position: absolute;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+/* active state */
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+.text-group textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+.text-group textarea:focus ~ .input-label,
+.text-group textarea:valid ~ .input-label,
+.text-group textarea.form-file ~ .input-label,
+.text-group textarea.has-value ~ .input-label {
+    font-size: 14px;
+    ;
+    color: gray;
+    top: -1rem;
+    left: 0;
+}
+.text-group textarea:focus ~ .input-label {
+    color: #96c93d;
+}
+.text-group textarea:focus ~ .bar::before {
+    width: 100%;
+    left: 0;
+}
+.text-group {
+    position: relative;
+    margin-top: 2.25rem;
+    margin-bottom: 4.25rem;
+}
